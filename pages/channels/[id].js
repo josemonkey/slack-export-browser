@@ -3,15 +3,18 @@ import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import {
+  getAllChannels,
+  getAllChannelIds,
+  getChannelData,
+} from '../../lib/channels'
 
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
-  const postData = await getPostData(params.id)
-
+  const channelData = await getChannelData(params.id)
   return {
     props: {
-      postData,
+      channelData,
     },
   }
 }
@@ -24,18 +27,18 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ postData }) {
+export default function Channel({ channelData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{channelData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <h1 className={utilStyles.headingXl}>{channelData.title}</h1>
         <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+          <Date dateString={channelData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: channelData.contentHtml }} />
       </article>
     </Layout>
   )
