@@ -1,4 +1,5 @@
 import utilStyles from '../styles/utils.module.css'
+import styles from './richTextElement.module.css'
 
 export default function RichTextElement({ element }) {
 
@@ -52,6 +53,22 @@ export default function RichTextElement({ element }) {
 
             </ul>
         )
+    } else if (element.type === "rich_text_quote") {
+        return (
+            <div className={styles.quote}>
+
+                {element.elements?.map((nestedElement) => (
+                    <li><RichTextElement element={nestedElement} /></li>
+                ))}
+
+            </div>
+        )
+
+    } else if (element.type === "channel") {
+        return (
+            <span className={utilStyles.error}>[TODO: channel reference = id={element.channel_id} ]</span>
+        );
+
     } else {
 
         return (<div className={utilStyles.error}>Unknown RT Element: {element.type}</div>);

@@ -31,7 +31,7 @@ export default function Home({ channelList }) {
         <ul className={utilStyles.list}>
           {channelList.map(({ id, name, purpose}) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/channels/${name}`}>{name}</Link> - {purpose?.value}
+              <Link href={`/channels/${name}`}>#{name}</Link> - {purpose?.value}
               <br />
             </li>
           ))}

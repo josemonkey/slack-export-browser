@@ -9,7 +9,7 @@ export default function Channel({ channel }) {
     return (
 
         <div>
-            <h1 className={utilStyles.headingXl}>{channel.title}</h1>
+            <h1 className={utilStyles.headingXl}>#{channel.title}</h1>
 
 
             {channel.days.map(({ id, date, content }) => (
