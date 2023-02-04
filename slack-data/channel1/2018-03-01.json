@@ -1,0 +1,156 @@
+[
+    {
+        "type": "message",
+        "text": "Oh, yeah. Seems like a good idea.",
+        "user": "U0M5Y3TDK",
+        "ts": "1519927200.000267",
+        "team": "T0M61HX7U",
+        "user_team": "T0M61HX7U",
+        "source_team": "T0M61HX7U",
+        "user_profile": {
+            "avatar_hash": "g88842574dea",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/188842574deae356a2ac45b6d3146095.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-72.png",
+            "first_name": "",
+            "real_name": "josemonkey",
+            "display_name": "",
+            "team": "T0M61HX7U",
+            "name": "josemonkey",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "g=h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Oh, yeah. Seems like a good idea."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Of course, when I looked up the 16-B (which I didn’t see before), it helpfully tells me it fits the Honda. :confused:",
+        "user": "U0M5Y3TDK",
+        "ts": "1519927280.000511",
+        "team": "T0M61HX7U",
+        "user_team": "T0M61HX7U",
+        "source_team": "T0M61HX7U",
+        "user_profile": {
+            "avatar_hash": "g88842574dea",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/188842574deae356a2ac45b6d3146095.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-72.png",
+            "first_name": "",
+            "real_name": "josemonkey",
+            "display_name": "",
+            "team": "T0M61HX7U",
+            "name": "josemonkey",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gqP8g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Of course, when I looked up the 16-B (which I didn’t see before), it helpfully tells me it fits the Honda. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "confused",
+                                "unicode": "1f615"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Should I order and initiate a return? I don’t think I beat up that blade too much.",
+        "user": "U0M5Y3TDK",
+        "ts": "1519927296.000669",
+        "team": "T0M61HX7U",
+        "user_team": "T0M61HX7U",
+        "source_team": "T0M61HX7U",
+        "user_profile": {
+            "avatar_hash": "g88842574dea",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/188842574deae356a2ac45b6d3146095.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-72.png",
+            "first_name": "",
+            "real_name": "josemonkey",
+            "display_name": "",
+            "team": "T0M61HX7U",
+            "name": "josemonkey",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AS4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Should I order and initiate a return? I don’t think I beat up that blade too much."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "E09EC4F2-1CD7-46A9-948F-1C4D84C0D521",
+        "type": "message",
+        "text": "Yeah. ",
+        "user": "U0M6QNFRB",
+        "ts": "1519930598.000425",
+        "team": "T0M61HX7U",
+        "user_team": "T0M61HX7U",
+        "source_team": "T0M61HX7U",
+        "user_profile": {
+            "avatar_hash": "g85f4db0bbf6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a85f4db0bbf68f02f2df2203c5c30a6e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "cecilytechuan",
+            "display_name": "",
+            "team": "T0M61HX7U",
+            "name": "cecilytechuan",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "omTEF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Yeah."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,207 @@
+[
+    {
+        "client_msg_id": "73669e9f-251d-4223-8284-ba41a18155c4",
+        "type": "message",
+        "text": "Maybe something to watch with the kids this summer: <https:\/\/offspring.lifehacker.com\/8-of-the-best-stand-up-comedians-to-watch-as-a-family-1844078926>\n• Brian Regan has two specials on Netflix: _<https:\/\/www.netflix.com\/watch\/80134827?trackId=13752289&amp;tctx=0%2C0%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2C%2C|Nunchucks and Flamethrowers> _and _<https:\/\/www.netflix.com\/watch\/80210810?trackId=13752289&amp;tctx=0%2C1%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2C%2C|Stand Up and Away>._\n• _Kellen Erskine:_ <https:\/\/www.youtube.com\/channel\/UCvlVuntLjdURVD3b3Hx7kxw\/featured>\n• Preacher Lawson: <https:\/\/www.youtube.com\/user\/ComedianPreacher\/featured>\n• Nate Bargatze has a special on Netflix called _<https:\/\/www.netflix.com\/watch\/81002880?trackId=13752289&amp;tctx=0%2C0%2Cfa0ae39e052296ba341f78f21686365fc4ddd968%3A71a8ad4b59fe93685bc340cacdb081b031db30b7%2Cfa0ae39e052296ba341f78f21686365fc4ddd968%3A71a8ad4b59fe93685bc340cacdb081b031db30b7%2C%2C|The Tennessee Kid>_\n• _Anjelah Johnson:_ <https:\/\/www.netflix.com\/title\/80046779> (TV 14)\n• Ryan Hamilton: <https:\/\/www.netflix.com\/watch\/80184834?trackId=13752289&amp;tctx=0%2C0%2C2bc3af0969948ff06b4d9a66972820e548b8ac5b%3A2fe07dcacc19db0f4890855b05bbfe190323e014%2C2bc3af0969948ff06b4d9a66972820e548b8ac5b%3A2fe07dcacc19db0f4890855b05bbfe190323e014%2C%2C> (TV 14 for substances)\n• Michael Jr: <https:\/\/www.youtube.com\/user\/THEMICHAELJRSHOW\/featured>\n• Jim Gaffigan: <https:\/\/www.youtube.com\/channel\/UCNhLt0Z5VL_9dcR27wnbQhA>",
+        "user": "U0M6QNFRB",
+        "ts": "1593115712.001700",
+        "team": "T0M61HX7U",
+        "user_team": "T0M61HX7U",
+        "source_team": "T0M61HX7U",
+        "user_profile": {
+            "avatar_hash": "g85f4db0bbf6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a85f4db0bbf68f02f2df2203c5c30a6e.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "cecilytechuan",
+            "display_name": "",
+            "team": "T0M61HX7U",
+            "name": "cecilytechuan",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rhKq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Maybe something to watch with the kids this summer: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/offspring.lifehacker.com\/8-of-the-best-stand-up-comedians-to-watch-as-a-family-1844078926"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Brian Regan has two specials on Netflix: "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.netflix.com\/watch\/80134827?trackId=13752289&tctx=0%2C0%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2C%2C",
+                                        "text": "Nunchucks and Flamethrowers",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " ",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "and "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.netflix.com\/watch\/80210810?trackId=13752289&tctx=0%2C1%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2Cc0c084b46ad8284e9b99f30cbe1caef195506627%3Aff1c409623bfdcd021e51fa31305f2215ce661bb%2C%2C",
+                                        "text": "Stand Up and Away",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": ".",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Kellen Erskine: ",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.youtube.com\/channel\/UCvlVuntLjdURVD3b3Hx7kxw\/featured"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Preacher Lawson: "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.youtube.com\/user\/ComedianPreacher\/featured"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Nate Bargatze has a special on Netflix called "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.netflix.com\/watch\/81002880?trackId=13752289&tctx=0%2C0%2Cfa0ae39e052296ba341f78f21686365fc4ddd968%3A71a8ad4b59fe93685bc340cacdb081b031db30b7%2Cfa0ae39e052296ba341f78f21686365fc4ddd968%3A71a8ad4b59fe93685bc340cacdb081b031db30b7%2C%2C",
+                                        "text": "The Tennessee Kid",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Anjelah Johnson: ",
+                                        "style": {
+                                            "italic": true
+                                        }
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.netflix.com\/title\/80046779"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " (TV 14)"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Ryan Hamilton: "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.netflix.com\/watch\/80184834?trackId=13752289&tctx=0%2C0%2C2bc3af0969948ff06b4d9a66972820e548b8ac5b%3A2fe07dcacc19db0f4890855b05bbfe190323e014%2C2bc3af0969948ff06b4d9a66972820e548b8ac5b%3A2fe07dcacc19db0f4890855b05bbfe190323e014%2C%2C"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " (TV 14 for substances)"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Michael Jr: "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.youtube.com\/user\/THEMICHAELJRSHOW\/featured"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Jim Gaffigan: "
+                                    },
+                                    {
+                                        "type": "link",
+                                        "url": "https:\/\/www.youtube.com\/channel\/UCNhLt0Z5VL_9dcR27wnbQhA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "bullet",
+                        "indent": 0
+                    }
+                ]
+            }
+        ]
+    }
+]
