@@ -1,4 +1,4 @@
-import { th } from "date-fns/locale";
+import utilStyles from '../styles/utils.module.css'
 
 export default function RichTextElement({ element }) {
 
@@ -20,6 +20,15 @@ export default function RichTextElement({ element }) {
             <span>
 
                 {element.text}
+
+            </span>
+        )
+    } else if (element.type === "emoji") {
+        return (
+            <span>
+                {String.fromCodePoint(parseInt(element.unicode, 16))}
+
+
 
             </span>
         )
@@ -45,7 +54,7 @@ export default function RichTextElement({ element }) {
         )
     } else {
 
-        return (<div>Unknown RT Element</div>);
+        return (<div className={utilStyles.error}>Unknown RT Element: {element.type}</div>);
     }
 
 

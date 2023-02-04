@@ -1,4 +1,6 @@
 import RichTextBlock from "./richTextBlock";
+import utilStyles from '../styles/utils.module.css'
+
 
 
 export default function MessageBlock({ username, block }) {
@@ -18,7 +20,7 @@ export default function MessageBlock({ username, block }) {
 
 
 
-            <div>Unknown Block type: {block.type}</div>
+            <div className={utilStyles.error}>Unknown Block type: {block.type}</div>
 
 
         );

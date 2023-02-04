@@ -6,7 +6,7 @@ export default function RichTextBlock({ username, block }) {
     return (
 
         <div>
-            <div><b>{username}:</b> </div>
+            <div style={{float: "left", marginRight: "5px"}}><b>{username}:</b> </div>
 
             <div>
             {block.elements?.map((element) => (

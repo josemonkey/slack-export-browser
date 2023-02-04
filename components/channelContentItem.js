@@ -11,28 +11,28 @@ function getUserName(userId) {
 
 export default function ChannelContentItem({contentItem}) {
 
+    var username = getUserName(contentItem.user);
 
 
     if (contentItem.type === "message") {
         if (contentItem.subtype && contentItem.subtype === "channel_join") {
-            return (<>foo</>)
+            return (<div>{username} joined the channel</div>)
             // FIXME
         } else if (contentItem.subtype && contentItem.subtype === "channel_purpose") {
-            return (<>foo2</>)
+            return (<div>{username} set the channel purpose: {contentItem.purpose}</div>)
             // FIXME
         
         } else {
-            console.log("XXX" + contentItem.type)
 
             return (
                 
-                <Message contentItem={contentItem} />
+                <Message username={username} contentItem={contentItem} />
 
             )
         }
     } else {
         return (
-            <div>Unknown ContentItem type: {contentItem.type}</div>
+            <div className={utilStyles.error}>Unknown ContentItem type: {contentItem.type}</div>
         )
     }
 
