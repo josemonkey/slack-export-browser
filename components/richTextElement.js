@@ -25,14 +25,19 @@ export default function RichTextElement({ element }) {
             </span>
         )
     } else if (element.type === "emoji") {
-        return (
-            <span>
-                {String.fromCodePoint(parseInt(element.unicode, 16))}
+
+        if (element.unicode && !isNaN(element.unicode)) {
+            return (
+                <span>
+                    {String.fromCodePoint(parseInt(element.unicode, 16))}
 
 
 
-            </span>
-        )
+                </span>
+            )
+        } else {
+            return (<></>);
+        }
     } else if (element.type === "link") {
 
         var linkText = element.text ? element.text : element.url;
