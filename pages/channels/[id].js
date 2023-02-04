@@ -5,40 +5,40 @@ import utilStyles from '../../styles/utils.module.css'
 
 import {
   getAllChannels,
-  getAllChannelIds,
-  getChannelData,
+  getAllChannelPathIds,
+  getChannel
 } from '../../lib/channels'
+
+
+import Channel from '../../components/channel'
+
 
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
-  const channelData = await getChannelData(params.id)
+  const channel= await getChannel(params.id)
   return {
     props: {
-      channelData,
+      channel,
     },
   }
 }
 
 export async function getStaticPaths() {
-  const paths = getAllChannelIds()
+  const paths = getAllChannelPathIds()
   return {
     paths,
     fallback: false,
   }
 }
 
-export default function Channel({ channelData }) {
+export default function ChannelPage({ channel }) {
   return (
     <Layout>
       <Head>
-        <title>{channelData.title}</title>
+        <title>{channel.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{channelData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={channelData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: channelData.contentHtml }} />
+        <Channel channel={channel} />
       </article>
     </Layout>
   )

@@ -3,18 +3,18 @@ import Layout, { siteTitle, siteDesc } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-import { getAllChannels } from '../lib/channels'
+import { getChannelList } from '../lib/channels'
 
 export async function getStaticProps() {
-  const allChannelIds = getAllChannels()
+  const channelList = getChannelList()
   return {
     props: {
-      allChannelIds,
+      channelList,
     },
   }
 }
 //
-export default function Home({ allChannelIds }) {
+export default function Home({ channelList }) {
   return (
     <Layout home>
       <Head>
@@ -26,7 +26,7 @@ export default function Home({ allChannelIds }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Channels</h2>
         <ul className={utilStyles.list}>
-          {allChannelIds.map(({ id, title }) => (
+          {channelList.map(({ id, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/channels/${id}`}>{title}</Link>
               <br />
