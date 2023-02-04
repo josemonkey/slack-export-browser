@@ -5,8 +5,8 @@ import utilStyles from '../../styles/utils.module.css'
 
 import {
   getAllChannels,
-  getAllChannelPathIds,
-  getChannel
+  getChannel,
+  getAllChannelPathIds
 } from '../../lib/channels'
 
 
@@ -15,7 +15,7 @@ import Channel from '../../components/channel'
 
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
-  const channel= await getChannel(params.id)
+  const channel= await getChannel(params.name)
   return {
     props: {
       channel,
