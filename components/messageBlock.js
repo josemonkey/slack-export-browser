@@ -1,13 +1,26 @@
-export default function MessageBlock({ block }) {
+import RichTextBlock from "./richTextBlock";
+
+
+export default function MessageBlock({ username, block }) {
 
     console.log(block);
-    return (
+
+
+    if (block.type === "rich_text") {
+        return (
+            <RichTextBlock username={username} block={block} />
+        );
+    } else {
+
+
+        return (
 
 
 
 
-        <div>{block.type}</div>
+            <div>Unknown Block type: {block.type}</div>
 
 
-    );
+        );
+    }
 }

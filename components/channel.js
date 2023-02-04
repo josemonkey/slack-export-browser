@@ -1,6 +1,6 @@
 import utilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
-import ChannelDay from './channelDay'
+import ChannelContent from './channelContent'
 
 
 
@@ -15,7 +15,7 @@ export default function Channel({ channel }) {
             {channel.days.map(({ id, date, content }) => (
 
 
-                <ChannelDay id={id} date={date} content={content} />
+                <ChannelContent id={id} date={date} content={content} />
 
             ))
             }
