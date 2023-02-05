@@ -16,9 +16,11 @@ import Channel from '../../components/channel'
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
   const channel= await getChannel(params.name)
+  const allChannels = await getAllChannels()
   return {
     props: {
       channel,
+      allChannels
     },
   }
 }
@@ -31,14 +33,15 @@ export async function getStaticPaths() {
   }
 }
 
-export default function ChannelPage({ channel }) {
+export default function ChannelPage({ channel, allChannels}) {
+
   return (
     <Layout>
       <Head>
         <title>{channel.title}</title>
       </Head>
       <article>
-        <Channel channel={channel} />
+        <Channel channel={channel} allChannels={allChannels} />
       </article>
     </Layout>
   )

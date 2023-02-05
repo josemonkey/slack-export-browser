@@ -1,7 +1,22 @@
 import utilStyles from '../styles/utils.module.css'
 import styles from './richTextElement.module.css'
+import Link from 'next/link'
 
-export default function RichTextElement({ element }) {
+
+export function getChannelByID(id, channelData) {
+
+    var result = channelData.filter(function (channel) {
+        return channel.id === id;
+    })
+
+    if (result && result.length == 1) {
+        return result[0];
+    } else {
+        return null;
+    }
+}
+
+export default function RichTextElement({ element, allChannels }) {
 
     // process this element first
 
@@ -11,7 +26,7 @@ export default function RichTextElement({ element }) {
             <div>
 
                 {element.elements?.map((nestedElement) => (
-                    <RichTextElement element={nestedElement} />
+                    <RichTextElement element={nestedElement} allChannels={allChannels} />
                 ))}
 
             </div>
@@ -53,7 +68,7 @@ export default function RichTextElement({ element }) {
             <ul>
 
                 {element.elements?.map((nestedElement) => (
-                    <li><RichTextElement element={nestedElement} /></li>
+                    <li><RichTextElement element={nestedElement} allChannels={allChannels} /></li>
                 ))}
 
             </ul>
@@ -63,16 +78,28 @@ export default function RichTextElement({ element }) {
             <div className={styles.quote}>
 
                 {element.elements?.map((nestedElement) => (
-                    <li><RichTextElement element={nestedElement} /></li>
+                    <RichTextElement element={nestedElement} allChannels={allChannels} />
                 ))}
 
             </div>
         )
 
     } else if (element.type === "channel") {
-        return (
-            <span className={utilStyles.error}>[TODO: channel reference = id={element.channel_id} ]</span>
-        );
+
+        var otherChannel = getChannelByID(element.channel_id, allChannels);
+
+        if (otherChannel && otherChannel.name)
+
+            return (
+                <Link href={`/channels/${otherChannel.name}`}>#{otherChannel.name}</Link>
+            );
+
+        else {
+            return (
+                <span className={utilStyles.error}>[Invalid channel reference, id={element.channel_id} ]</span>
+
+            );
+        }
 
     } else {
 

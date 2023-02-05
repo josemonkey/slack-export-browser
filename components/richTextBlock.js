@@ -1,7 +1,7 @@
 import RichTextElement from "./richTextElement";
 import styles from './richTextBlock.module.css';
 
-export default function RichTextBlock({ username, block }) {
+export default function RichTextBlock({ username, block, allChannels}) {
 
 
     return (
@@ -13,7 +13,7 @@ export default function RichTextBlock({ username, block }) {
             {block.elements?.map((element) => (
 
 
-                <RichTextElement element={element} />
+                <RichTextElement element={element} allChannels={allChannels}/>
 
             ))}
             </div>

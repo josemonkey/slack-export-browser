@@ -4,7 +4,7 @@ import ChannelContent from './channelContent'
 
 
 
-export default function Channel({ channel }) {
+export default function Channel({ channel, allChannels }) {
 
     return (
 
@@ -15,7 +15,7 @@ export default function Channel({ channel }) {
             {channel.days.map(({ id, date, content }) => (
 
 
-                <ChannelContent id={id} date={date} content={content} />
+                <ChannelContent id={id} date={date} content={content} allChannels={allChannels} />
 
             ))
             }

@@ -9,7 +9,7 @@ function getUserName(userId) {
 }
 
 
-export default function ChannelContentItem({contentItem}) {
+export default function ChannelContentItem({contentItem, allChannels}) {
 
     var username = getUserName(contentItem.user);
 
@@ -26,7 +26,7 @@ export default function ChannelContentItem({contentItem}) {
 
             return (
                 
-                <Message username={username} contentItem={contentItem} />
+                <Message username={username} contentItem={contentItem} allChannels={allChannels}/>
 
             )
         }

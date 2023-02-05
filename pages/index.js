@@ -3,10 +3,10 @@ import Layout, { siteTitle, siteDesc } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-import { getChannelList, getRealChannels } from '../lib/channels'
+import { getAllChannels, getRealChannels } from '../lib/channels'
 
 export async function getStaticProps() {
-  const channelList = getChannelList()
+  const channelList = getAllChannels()
   return {
     props: {
       channelList,

@@ -5,7 +5,7 @@ import ChannelContentItem from './channelContentItem';
 
 
 
-export default function ChannelContent({ id, date, content }) {
+export default function ChannelContent({ id, date, content, allChannels}) {
 
 
     return (
@@ -16,7 +16,7 @@ export default function ChannelContent({ id, date, content }) {
 
             {content?.map((thisOne) => (
 
-                <ChannelContentItem contentItem={thisOne} />
+                <ChannelContentItem contentItem={thisOne} allChannels={allChannels}/>
 
 
             ))}
