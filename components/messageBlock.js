@@ -3,13 +3,13 @@ import utilStyles from '../styles/utils.module.css'
 
 
 
-export default function MessageBlock({ username, block, allChannels}) {
+export default function MessageBlock({ block, allChannels, userId, allUsers}) {
 
 
 
     if (block.type === "rich_text") {
         return (
-            <RichTextBlock username={username} block={block} allChannels={allChannels}/>
+            <RichTextBlock block={block} allChannels={allChannels} userId={userId} allUsers={allUsers}/>
         );
     } else {
 

@@ -1,9 +1,27 @@
 import { getUsers } from "../lib/users";
 
-function getUserName(userId) {
-    if (userId === "U0M5Y3TDK") { return "Jeremy"; }
-    if (userId === "U0M6QNFRB") { return "Jess"; }
-    return "(UNKNOWN USER)";
+function getUserName(userData, userId) {
+  var result = userData.filter((user) => {
+    return user.id === userId
+  })
+
+  if (result && result.length > 0) {
+    return result[0].name
+  } else {
+    return '[UNKNOWN USER]'
+  }
+}
+
+function getUser(userData, userId) {
+  var result = userData.filter((user) => {
+    return user.id === userId
+  })
+
+  if (result && result.length > 0) {
+    return result[0]
+  } else {
+    return { name: "[UNKNOWN USER]" };
+  }
 }
 
 
@@ -18,10 +36,12 @@ export async function getStaticProps() {
 
 export default function User({ userData, userId }) {
 
-    console.log(userData);
+
+  const thisUser = getUser(userData, userId);
+
     return (
 
-    <div>{getUserName(userId)}</div>
+    <span><b>{thisUser.name}</b></span>
     )
   }
   

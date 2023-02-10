@@ -1,7 +1,7 @@
 import MessageBlock from "./messageBlock";
 
 
-export default function Message({username, contentItem, allChannels}) {
+export default function Message({contentItem, allChannels, allUsers}) {
 
 
     return (
@@ -9,7 +9,7 @@ export default function Message({username, contentItem, allChannels}) {
         {
             contentItem.blocks?.map((block) => (
 
-                <MessageBlock username={username} block={block} allChannels={allChannels}/>
+                <MessageBlock block={block} allChannels={allChannels} userId={contentItem.user} allUsers={allUsers}/>
             ))
         }
         </div>
