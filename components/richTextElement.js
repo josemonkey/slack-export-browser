@@ -33,8 +33,18 @@ export default function RichTextElement({ element, allChannels, allUsers }) {
             </div>
         )
     } else if (element.type === "text") {
+
+        var style;
+        if(element.style) {
+
+            style = {
+                fontWeight: element.style.bold ? "bold" : "normal",
+                fontStyle: element.style.italic ? "italic" : "normal"
+            }
+
+        }
         return (
-            <span>
+            <span style={style}>
 
                 {element.text}
 
