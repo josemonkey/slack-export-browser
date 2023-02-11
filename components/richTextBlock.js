@@ -14,7 +14,7 @@ export default function RichTextBlock({ block, allChannels, userId, allUsers}) {
             {block.elements?.map((element) => (
 
 
-                <RichTextElement element={element} allChannels={allChannels}/>
+                <RichTextElement element={element} allChannels={allChannels} allUsers={allUsers}/>
 
             ))}
             </div>

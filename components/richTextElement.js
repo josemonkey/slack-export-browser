@@ -1,6 +1,7 @@
 import utilStyles from '../styles/utils.module.css'
 import styles from './richTextElement.module.css'
 import Link from 'next/link'
+import User from './user';
 
 
 export function getChannelByID(id, channelData) {
@@ -16,7 +17,7 @@ export function getChannelByID(id, channelData) {
     }
 }
 
-export default function RichTextElement({ element, allChannels }) {
+export default function RichTextElement({ element, allChannels, allUsers }) {
 
     // process this element first
 
@@ -26,7 +27,7 @@ export default function RichTextElement({ element, allChannels }) {
             <div>
 
                 {element.elements?.map((nestedElement) => (
-                    <RichTextElement element={nestedElement} allChannels={allChannels} />
+                    <RichTextElement element={nestedElement} allChannels={allChannels} allUsers={allUsers}/>
                 ))}
 
             </div>
@@ -68,7 +69,7 @@ export default function RichTextElement({ element, allChannels }) {
             <ul>
 
                 {element.elements?.map((nestedElement) => (
-                    <li><RichTextElement element={nestedElement} allChannels={allChannels} /></li>
+                    <li><RichTextElement element={nestedElement} allChannels={allChannels} allUsers={allUsers}/></li>
                 ))}
 
             </ul>
@@ -78,7 +79,7 @@ export default function RichTextElement({ element, allChannels }) {
             <div className={styles.quote}>
 
                 {element.elements?.map((nestedElement) => (
-                    <RichTextElement element={nestedElement} allChannels={allChannels} />
+                    <RichTextElement element={nestedElement} allChannels={allChannels} allUsers={allUsers}/>
                 ))}
 
             </div>
@@ -100,6 +101,15 @@ export default function RichTextElement({ element, allChannels }) {
 
             );
         }
+
+    } else if (element.type === "user") {
+
+        console.log(element);
+
+        return (
+            <User userData={allUsers} userId={element.user_id} />);
+
+
 
     } else {
 
