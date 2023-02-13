@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import { getAllChannels, getRealChannels } from '../lib/channels'
 
+/* Get the list of channels so we can present some navigation. */
 export async function getStaticProps() {
   const channelList = getAllChannels()
   return {
@@ -13,7 +14,8 @@ export async function getStaticProps() {
     },
   }
 }
-//
+
+/* The home page */
 export default function Home({ channelList }) {
   return (
     <Layout home>
@@ -26,10 +28,8 @@ export default function Home({ channelList }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Channels</h2>
 
-
-
         <ul className={utilStyles.list}>
-          {channelList.map(({ id, name, purpose}) => (
+          {channelList.map(({ id, name, purpose }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/channels/${name}`}>#{name}</Link> - {purpose?.value}
               <br />

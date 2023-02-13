@@ -2,6 +2,7 @@ import utilStyles from '../styles/utils.module.css'
 import Message from './message'
 import User from './user'
 
+// Each ChannelContent object has multiple ChannelContentItems
 export default function ChannelContentItem({
   contentItem,
   allChannels,

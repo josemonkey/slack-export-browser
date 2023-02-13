@@ -13,8 +13,10 @@ import { getUserList } from '../../lib/users'
 
 import Channel from '../../components/channel'
 
+/* This is the page that renders a specific channel, given the name as part of the path */
 export async function getStaticProps({ params }) {
-  // Add the "await" keyword like this:
+  // Get all of the channels and users so we can pass them down to all children, EVERY TIME, in case they need them.
+  // TODO: Surely there's a better way?
   const channel = await getChannel(params.name)
   const allChannels = await getAllChannels()
   const allUsers = await getUserList()

@@ -7,6 +7,7 @@ import Link from 'next/link'
 export const siteTitle = 'Slack Export Browser'
 export const siteDesc = 'A simple Next.js app to browse exported slack data'
 
+// Our main layout component
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
