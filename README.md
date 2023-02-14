@@ -28,6 +28,10 @@ You can produce a static export of the files by running
 
 The files will be in the ./out folder.
 
+### Note about the "basePath" setting in next.config.js
+
+For my specific scenario of use, I copy the content of the "out" folder to a folder named "slack" on my web server. This means that I access the files with a base URL of http://(MY SERVER NAME)/slack/. I have set the basePath in the next.config.js file to "/slack" for production builds for this reason. If that doesn't suit you, change it to something else or remove it.
+
 ## Caveats
 
 This project is quick and dirty, and isn't intended to be fully-functional. There's probably a lot it can't do. It meets my needs, for now, and I might update it over time if I find I need it to do something else, but otherwise - it is what it is. Your mileage may vary.
