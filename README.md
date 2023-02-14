@@ -6,15 +6,19 @@ This is a very basic Next.js app to read a set of exported slack files and rende
 
 ## Getting Started
 
-1. After you have this project downloaded, get it ready by running 
+1. After you have this project downloaded, get it ready by running
 
-	`npm install`
+   `npm install`
 
-2. Next create a folder inside of the project folder called "slack-data." (You can call it something else, but if you do, edit .env.local to make sure it points to the correct subfolder.)
-3. Unzip your exported slack file into that new folder. This should create a users.json, channels.json, and a bunch of subfolders for each channel.
-4. Start the app by running
+2. Copy ".env.example" to ".env.local" by running this (or whatever works for your platform):
 
-	`npm run dev`
+   `cp .env.example .env.local`
+
+3. Next create a folder inside of the project folder called "slack-data." (You can call it something else, but if you do, edit .env.local to make sure it points to the correct subfolder.)
+4. Unzip your exported slack file into that new folder. This should create a users.json, channels.json, and a bunch of subfolders for each channel.
+5. Start the app by running
+
+   `npm run dev`
 
 ## Static Export
 
@@ -26,7 +30,7 @@ The files will be in the ./out folder.
 
 ## Caveats
 
-This project is quick and dirty, and isn't intended to be fully-functional. There's probably a lot it can't do. It meets my needs, for now, and I might update it over time if I find I need it to do something else, but otherwise - it is what it is. Your mileage may vary. 
+This project is quick and dirty, and isn't intended to be fully-functional. There's probably a lot it can't do. It meets my needs, for now, and I might update it over time if I find I need it to do something else, but otherwise - it is what it is. Your mileage may vary.
 
 ## Credits
 
